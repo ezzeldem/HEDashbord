@@ -17,7 +17,7 @@ export default function LineChartBox() {
     <Box title="revenye ">
       {/* <ResponsiveContainer width='100%' height={400}> */}
       <ResponsiveContainer aspect="2">
-        <LineChart width={500} height={300} data={dashboardLineHomeData}>
+        <LineChart width={500} height={260} data={dashboardLineHomeData}>
           <CartesianGrid strokeDasharray='3 ' stroke='rgba(56, 56, 56, 0.11)' />
           <XAxis dataKey='name' stroke='rgba(56, 56, 56, 0.452)' />
           <YAxis stroke='rgba(56, 56, 56, 0.452)' />

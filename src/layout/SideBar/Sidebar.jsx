@@ -1,7 +1,7 @@
 import React from "react";
 import SideBarStyle from "./sideBarStyle";
 import { NavLink } from "react-router-dom";
-import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
+import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import InsightsOutlinedIcon from "@mui/icons-material/InsightsOutlined";
 export default function Sidebar({ sideBar, showSideBar }) {
   return (
@@ -26,9 +26,9 @@ export default function Sidebar({ sideBar, showSideBar }) {
             </NavLink>
           </li>
           <li>
-            <NavLink to='/dashboard' className='trans2'>
-              <GridViewOutlinedIcon />
-              <span className='text trans2'>dashboard</span>
+            <NavLink to='/users' className='trans2'>
+              <GroupOutlinedIcon/>
+              <span className='text trans2'>Users</span>
             </NavLink>
           </li>
         </ul>

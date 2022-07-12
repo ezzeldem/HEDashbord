@@ -3,7 +3,7 @@ import styled from "styled-components";
 const LayoutStyle = styled.div`
   height: calc(100vh - 90px);
   padding: ${(props) =>
-    props.sideBar ? "30px 30px 30px 76px" : "30px 30px 30px 266px"};
+    props.sideBar ? "30px 30px 30px 84px" : "30px 30px 30px 266px"};
   transition: all 0.4s ease-in-out;
   @media (max-width: 772px) {
     padding: 30px;

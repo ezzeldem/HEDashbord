@@ -6,7 +6,6 @@ import {
   AreaChart,
   BarChart,
   Bar,
-  Cell,
   Area,
   Tooltip,
   ResponsiveContainer,

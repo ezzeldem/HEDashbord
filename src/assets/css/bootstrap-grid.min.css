@@ -3883,3 +3883,9 @@
   }
 }
 /*# sourceMappingURL=bootstrap-grid.min.css.map */
+
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}

@@ -10,15 +10,13 @@ const BoxStyle = styled.div`
     props.boxShadow ? "5px 7px 18px -2px rgba(0, 0, 0, 0.096)" : "none"};
   background-color: var(--white);
   transition: 0.2s all ease-in-out;
-  &:hover {
-    transform: scale(1.01) translateY(-4px);
-  }
   .boxTitle {
     padding: ${(props) => (props.paddingNull ? "20px 20px 0 20px" : "0")};
     .title {
       font-size: 20px;
       color: #adadad;
       font-weight: 400;
+      text-transform: capitalize;
       padding-bottom: 26px;
     }
   }

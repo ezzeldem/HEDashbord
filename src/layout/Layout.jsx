@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar/NavBar";
 import Sidebar from "./SideBar/Sidebar";
 import LayoutStyle from "./LayoutStyle";
@@ -6,9 +6,21 @@ import LayoutStyle from "./LayoutStyle";
 export default function Layout({ children }) {
   const [sideBar, setSideBar] = useState(false);
   const [showSideBar, setShowSideBar] = useState(false);
+
+  useEffect(() => {
+    if (window.screen.width <= 992) {
+      setSideBar(true);
+    }
+    if (window.screen.width < 772) {
+      setSideBar(false);
+    }
+  }, []);
+
   return (
     <LayoutStyle sideBar={sideBar} showSideBar={showSideBar}>
-      {showSideBar && <div className='overLay' onClick={() => setShowSideBar(false)}></div>}
+      {showSideBar && (
+        <div className='overLay' onClick={() => setShowSideBar(false)}></div>
+      )}
       <Sidebar sideBar={sideBar} showSideBar={showSideBar} />
       <NavBar
         setSideBar={setSideBar}
