@@ -3,9 +3,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const ButtoonBoxStyle = styled.div`
+  display: inline-block;
   a {
-    padding:10px 20px;
-    display: inline-block;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
     border: 1px solid var(--min);
     margin: 0 20px 0 0;
     font-size: 16px;
@@ -13,7 +16,11 @@ const ButtoonBoxStyle = styled.div`
     border-radius: 5px;
     background-color: var(--min);
     color: var(--white);
-    &:hover{
+    svg {
+      padding: 0 0 0 6px;
+      font-size: 20px;
+    }
+    &:hover {
       background-color: var(--white);
       color: var(--min);
     }
@@ -23,7 +30,9 @@ const ButtoonBoxStyle = styled.div`
 const ButtonBox = ({ path, children }) => {
   return (
     <ButtoonBoxStyle>
-      <Link className="trans2" to={path}>{children}</Link>
+      <Link className='trans2' to={path}>
+        {children}
+      </Link>
     </ButtoonBoxStyle>
   );
 };

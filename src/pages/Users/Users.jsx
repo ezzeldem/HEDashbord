@@ -4,6 +4,8 @@ import Box from "../../components/Box/Box";
 import { usersData } from "../../dummyData";
 import { Link } from "react-router-dom";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import ButtonBox from "../../components/ButtonBox/ButtonBox";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
 const usersColumns = [
   {
@@ -77,7 +79,11 @@ const usersColumns = [
 export default function Users() {
   return (
     <>
-      <PageHeader title='Users' />
+      <PageHeader title='Users'>
+        <ButtonBox path='/adduser'>
+          Add User <AddOutlinedIcon />
+        </ButtonBox>
+      </PageHeader>
       <Box>
         <div style={{ height: 371, width: "100%" }}>
           <DataGrid

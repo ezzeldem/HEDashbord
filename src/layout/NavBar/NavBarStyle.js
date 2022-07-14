@@ -29,27 +29,10 @@ const NavBarStyle = styled.div`
       margin: 0 20px 0;
       li {
         margin: 0 10px;
-        a {
-          position: relative;
-          display: inline-block;
           svg {
             font-size: 20px;
-            color: var(--black);
-          }
-          .number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            position: absolute;
-            top: -10px;
-            right: -6px;
-            font-size: 13px;
-            border-radius: 50%;
-            color: var(--white);
-            background-color: var(--sc);
-          }
+              color: var(--black);
+            cursor: pointer;
         }
       }
     }
