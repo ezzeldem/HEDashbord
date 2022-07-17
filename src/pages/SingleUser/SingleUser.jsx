@@ -2,11 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import SingleUserStyle from "./SingleUserStyle";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import Box from "../../components/Box/Box";
 import { usersData } from "../../dummyData";
 import TopBox from "./components/TopBox/TopBox";
 import DetailsBox from "./components/DetailsBox/DetailsBox";
-import Skills from "../../components/Skills/Skills";
 import FeedBackBox from "./components/FeedBackBox/FeedBackBox";
 import AboutBox from "./components/AboutBox/AboutBox";
 export default function SingleUser() {

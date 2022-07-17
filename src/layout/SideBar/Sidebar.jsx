@@ -1,8 +1,9 @@
 import React from "react";
 import SideBarStyle from "./sideBarStyle";
 import { NavLink } from "react-router-dom";
-import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
+import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import InsightsOutlinedIcon from "@mui/icons-material/InsightsOutlined";
+import CategoryOutlinedIcon from "@mui/icons-material/CategoryOutlined";
 export default function Sidebar({ sideBar, showSideBar }) {
   return (
     <SideBarStyle
@@ -27,8 +28,14 @@ export default function Sidebar({ sideBar, showSideBar }) {
           </li>
           <li>
             <NavLink to='/users' className='trans2'>
-              <GroupOutlinedIcon/>
+              <GroupOutlinedIcon />
               <span className='text trans2'>Users</span>
+            </NavLink>
+          </li>
+          <li className='hasChiled'>
+            <NavLink to="/products" className='trans2'>
+              <CategoryOutlinedIcon />
+              <span className='text trans2'>Products</span>
             </NavLink>
           </li>
         </ul>

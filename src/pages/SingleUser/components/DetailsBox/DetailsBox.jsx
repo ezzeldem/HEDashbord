@@ -25,7 +25,7 @@ const DetailsListStyle = styled.ul`
 
 export default function DetailsBox({ data }) {
   const detailsList = Object.keys(data.detailsList[0]).map((el) => (
-    <li>
+    <li key={el}>
       <span className='title'>{el} :</span>
       <span className='details'>{data.detailsList[0][el]}</span>
     </li>

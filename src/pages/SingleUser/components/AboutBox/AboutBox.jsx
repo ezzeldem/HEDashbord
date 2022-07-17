@@ -11,7 +11,7 @@ const AboutBoxStyle = styled.ul`
     border-bottom: 1px solid #ddd;
     &:last-of-type {
       padding: 0 0 40px;
-      margin: 0 ;
+      margin: 0;
       border-bottom: none;
     }
     .title {
@@ -34,7 +34,7 @@ const LangList = styled.ul`
     display: flex;
     align-items: center;
     svg {
-      margin: 0  4px 0 0;
+      margin: 0 4px 0 0;
       font-size: 12px;
       color: #888;
     }
@@ -52,7 +52,7 @@ export default function AboutBox({ data }) {
 
   return (
     <AboutBoxStyle>
-      <Box >
+      <Box>
         <div className='aboutBox'>
           <h4 className='title'>About</h4>
           <p className='prag'>{data.about}</p>

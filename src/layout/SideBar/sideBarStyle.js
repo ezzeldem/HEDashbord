@@ -41,6 +41,7 @@ const SideBarStyle = styled.div`
         a {
           display: flex;
           align-items: center;
+          cursor: pointer;
           font-size: 16px;
           color: var(--balck);
           text-transform: capitalize;
@@ -100,7 +101,7 @@ const SideBarStyle = styled.div`
       }
     }
   }
-  @media (max-width:772px) {
+  @media (max-width: 772px) {
     left: -260px;
   }
   &.opneSide {
@@ -109,3 +110,4 @@ const SideBarStyle = styled.div`
 `;
 
 export default SideBarStyle;
+

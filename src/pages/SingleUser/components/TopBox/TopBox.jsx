@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TopBoxStyle from "./TopBoxStyle";
+import { Avatar } from "@mui/material";
 
 export default function TopBox({ data }) {
   return (
@@ -16,7 +17,8 @@ export default function TopBox({ data }) {
           <div className='col-lg-8 col-md-6 col-12'>
             <div className='userDetails'>
               <div className='imgBox'>
-                <img src={userImg} alt='userImg' className='img-fluid' />
+                {/* <img src={userImg} alt='userImg' className='img-fluid' /> */}
+                <Avatar alt="Remy Sharp" src={userImg}  sx={{ width: 150, height: 150 }}/>
               </div>
               <div className='userNameBox'>
                 <h4 className='name'>{data.name}</h4>

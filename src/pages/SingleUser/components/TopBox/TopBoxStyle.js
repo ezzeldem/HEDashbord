@@ -6,13 +6,6 @@ const TopBoxStyle = styled.div`
     align-items: center;
     margin: 0 0 10px;
     flex-wrap: wrap;
-    .imgBox {
-      img {
-        border-radius: 50%;
-        width: 150px;
-        border: 10px solid #c5c5c544;
-      }
-    }
     .userNameBox {
       margin: 10px 20px;
       .name {
