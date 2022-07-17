@@ -33,10 +33,16 @@ const PageHeaderStyle = styled.div`
       font-size: 22px;
       font-weight: 600;
     }
-    
   }
-  .childernBox{
+  .childernBox {
     text-align: end;
+  }
+  @media (max-width: 772px) {
+    .arrowBox {
+      .title {
+        font-size: 16px;
+      }
+    }
   }
 `;
 
@@ -58,8 +64,9 @@ export default function PageHeader({ title, children }) {
             <h2 className='title'>{title}</h2>
           </div>
         </div>
-        <div className='col-md-6 col-6 ' ><div className="childernBox">
-        {children}</div></div>
+        <div className='col-md-6 col-6 '>
+          <div className='childernBox'>{children}</div>
+        </div>
       </div>
     </PageHeaderStyle>
   );
