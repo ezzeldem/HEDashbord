@@ -27,6 +27,7 @@ const ButtoonBoxStyle = styled.div`
   }
   @media (max-width: 772px) {
     a{
+      margin: 0;
       padding: 10px 14px;
       font-size: 12px;
     }
