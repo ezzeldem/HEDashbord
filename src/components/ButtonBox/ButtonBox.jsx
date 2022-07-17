@@ -25,6 +25,12 @@ const ButtoonBoxStyle = styled.div`
       color: var(--min);
     }
   }
+  @media (max-width: 772px) {
+    a{
+      padding: 10px 14px;
+      font-size: 12px;
+    }
+  }
 `;
 
 const ButtonBox = ({ path, children }) => {
