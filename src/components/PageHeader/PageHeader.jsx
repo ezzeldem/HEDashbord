@@ -50,7 +50,7 @@ export default function PageHeader({ title, children }) {
   return (
     <PageHeaderStyle>
       <div className='row align-items-center'>
-        <div className='col-md-6 col-12'>
+        <div className='col-md-6 col-6'>
           <div className='arrowBox'>
             <div className='prevesArrow trans2' onClick={handlePrevesPage}>
               <ArrowBackOutlinedIcon className='trans2' />
@@ -58,7 +58,7 @@ export default function PageHeader({ title, children }) {
             <h2 className='title'>{title}</h2>
           </div>
         </div>
-        <div className='col-md-6 col-12 ' ><div className="childernBox">
+        <div className='col-md-6 col-6 ' ><div className="childernBox">
         {children}</div></div>
       </div>
     </PageHeaderStyle>
