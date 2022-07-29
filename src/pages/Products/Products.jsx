@@ -33,9 +33,9 @@ export default function products() {
           <TopSlider />
         </div>
       </div>
-      <Box>
-        <div className='row'>{productListBox}</div>
-      </Box>
+      {/* <Box> */}
+      <div className='row'>{productListBox}</div>
+      {/* </Box> */}
     </>
   );
 }

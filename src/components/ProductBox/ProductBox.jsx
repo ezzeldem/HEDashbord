@@ -24,7 +24,11 @@ export default function ProductBox({
             image={productImg}
             alt='Product'
           />
-          <CardContent>
+          <CardContent
+            style={{
+              textAlign: "center",
+            }}
+          >
             <Typography
               gutterBottom
               variant='h5'
@@ -43,9 +47,9 @@ export default function ProductBox({
             >
               {productPrice}
             </div>
-            <Typography variant='body2' color='text.secondary' className='mb-4'>
+            {/* <Typography variant='body2' color='text.secondary' className='mb-4'>
               {productDescription.substring(1, 200)}
-            </Typography>
+            </Typography> */}
             <Chip label={productCategory} />
           </CardContent>
         </Link>
